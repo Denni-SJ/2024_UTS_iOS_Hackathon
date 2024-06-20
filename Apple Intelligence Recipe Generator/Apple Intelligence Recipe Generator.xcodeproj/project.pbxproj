@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDBD5032C23F7AC00A76044 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5022C23F7AC00A76044 /* Dependencies */; };
+		3BDBD5062C23F7C100A76044 /* SwiftSpeechCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5052C23F7C100A76044 /* SwiftSpeechCombine */; };
+		3BDBD5082C23F7C100A76044 /* SwiftSpeechRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5072C23F7C100A76044 /* SwiftSpeechRecognizer */; };
+		3BDBD50A2C23F7C100A76044 /* SwiftSpeechRecognizerDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5092C23F7C100A76044 /* SwiftSpeechRecognizerDependency */; };
 		DC1C9F2A2C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */; };
 		DC1C9F2C2C23D97200A11C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F2B2C23D97200A11C35 /* ContentView.swift */; };
 		DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F2D2C23D97200A11C35 /* Item.swift */; };
@@ -28,6 +32,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDBD5062C23F7C100A76044 /* SwiftSpeechCombine in Frameworks */,
+				3BDBD5032C23F7AC00A76044 /* Dependencies in Frameworks */,
+				3BDBD5082C23F7C100A76044 /* SwiftSpeechRecognizer in Frameworks */,
+				3BDBD50A2C23F7C100A76044 /* SwiftSpeechRecognizerDependency in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,12 @@
 			dependencies = (
 			);
 			name = "Apple Intelligence Recipe Generator";
+			packageProductDependencies = (
+				3BDBD5022C23F7AC00A76044 /* Dependencies */,
+				3BDBD5052C23F7C100A76044 /* SwiftSpeechCombine */,
+				3BDBD5072C23F7C100A76044 /* SwiftSpeechRecognizer */,
+				3BDBD5092C23F7C100A76044 /* SwiftSpeechRecognizerDependency */,
+			);
 			productName = "Apple Intelligence Recipe Generator";
 			productReference = DC1C9F262C23D97200A11C35 /* Apple Intelligence Recipe Generator.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,10 @@
 				Base,
 			);
 			mainGroup = DC1C9F1D2C23D97200A11C35;
+			packageReferences = (
+				3BDBD5012C23F7AC00A76044 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				3BDBD5042C23F7C100A76044 /* XCRemoteSwiftPackageReference "swift-speech-recognizer" */,
+			);
 			productRefGroup = DC1C9F272C23D97200A11C35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +364,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BDBD5012C23F7AC00A76044 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.6.0;
+			};
+		};
+		3BDBD5042C23F7C100A76044 /* XCRemoteSwiftPackageReference "swift-speech-recognizer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/renaudjenny/swift-speech-recognizer.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BDBD5022C23F7AC00A76044 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BDBD5012C23F7AC00A76044 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		3BDBD5052C23F7C100A76044 /* SwiftSpeechCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BDBD5042C23F7C100A76044 /* XCRemoteSwiftPackageReference "swift-speech-recognizer" */;
+			productName = SwiftSpeechCombine;
+		};
+		3BDBD5072C23F7C100A76044 /* SwiftSpeechRecognizer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BDBD5042C23F7C100A76044 /* XCRemoteSwiftPackageReference "swift-speech-recognizer" */;
+			productName = SwiftSpeechRecognizer;
+		};
+		3BDBD5092C23F7C100A76044 /* SwiftSpeechRecognizerDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BDBD5042C23F7C100A76044 /* XCRemoteSwiftPackageReference "swift-speech-recognizer" */;
+			productName = SwiftSpeechRecognizerDependency;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC1C9F1E2C23D97200A11C35 /* Project object */;
 }
