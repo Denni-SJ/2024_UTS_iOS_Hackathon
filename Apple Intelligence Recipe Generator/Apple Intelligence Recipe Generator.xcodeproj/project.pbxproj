@@ -11,6 +11,11 @@
 		3BDBD5062C23F7C100A76044 /* SwiftSpeechCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5052C23F7C100A76044 /* SwiftSpeechCombine */; };
 		3BDBD5082C23F7C100A76044 /* SwiftSpeechRecognizer in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5072C23F7C100A76044 /* SwiftSpeechRecognizer */; };
 		3BDBD50A2C23F7C100A76044 /* SwiftSpeechRecognizerDependency in Frameworks */ = {isa = PBXBuildFile; productRef = 3BDBD5092C23F7C100A76044 /* SwiftSpeechRecognizerDependency */; };
+		3BDBD50C2C23F85500A76044 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD50B2C23F85500A76044 /* SpeechRecognizer.swift */; };
+		3BDBD50F2C23F8BC00A76044 /* ConversationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD50E2C23F8BC00A76044 /* ConversationManager.swift */; };
+		3BDBD5112C23F8E100A76044 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD5102C23F8E100A76044 /* OpenAIService.swift */; };
+		3BDBD5132C23F91F00A76044 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD5122C23F91F00A76044 /* GlobalVariables.swift */; };
+		3BDBD5152C23F93300A76044 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDBD5142C23F93300A76044 /* Secrets.swift */; };
 		DC1C9F2A2C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */; };
 		DC1C9F2C2C23D97200A11C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F2B2C23D97200A11C35 /* ContentView.swift */; };
 		DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F2D2C23D97200A11C35 /* Item.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDBD50B2C23F85500A76044 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		3BDBD50E2C23F8BC00A76044 /* ConversationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationManager.swift; sourceTree = "<group>"; };
+		3BDBD5102C23F8E100A76044 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		3BDBD5122C23F91F00A76044 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		3BDBD5142C23F93300A76044 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		DC1C9F262C23D97200A11C35 /* Apple Intelligence Recipe Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Intelligence Recipe Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Intelligence_Recipe_GeneratorApp.swift; sourceTree = "<group>"; };
 		DC1C9F2B2C23D97200A11C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +52,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDBD50D2C23F86100A76044 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BDBD50B2C23F85500A76044 /* SpeechRecognizer.swift */,
+				3BDBD5102C23F8E100A76044 /* OpenAIService.swift */,
+				3BDBD50E2C23F8BC00A76044 /* ConversationManager.swift */,
+				3BDBD5122C23F91F00A76044 /* GlobalVariables.swift */,
+				3BDBD5142C23F93300A76044 /* Secrets.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DC1C9F1D2C23D97200A11C35 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +86,7 @@
 				DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */,
 				DC1C9F2B2C23D97200A11C35 /* ContentView.swift */,
 				DC1C9F2D2C23D97200A11C35 /* Item.swift */,
+				3BDBD50D2C23F86100A76044 /* Model */,
 				DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */,
 				DC1C9F312C23D97300A11C35 /* Preview Content */,
 			);
@@ -159,7 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1C9F2C2C23D97200A11C35 /* ContentView.swift in Sources */,
+				3BDBD5152C23F93300A76044 /* Secrets.swift in Sources */,
+				3BDBD50C2C23F85500A76044 /* SpeechRecognizer.swift in Sources */,
 				DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */,
+				3BDBD5112C23F8E100A76044 /* OpenAIService.swift in Sources */,
+				3BDBD5132C23F91F00A76044 /* GlobalVariables.swift in Sources */,
+				3BDBD50F2C23F8BC00A76044 /* ConversationManager.swift in Sources */,
 				DC1C9F2A2C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +322,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Intelligence Recipe Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = 268K47U323;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,7 +337,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "rodd7.Apple-Intelligence-Recipe-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Intelligence-Recipe-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,8 +353,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Intelligence Recipe Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = 268K47U323;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "rodd7.Apple-Intelligence-Recipe-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Intelligence-Recipe-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

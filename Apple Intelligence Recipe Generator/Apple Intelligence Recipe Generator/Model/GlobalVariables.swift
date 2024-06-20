@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct GlobalVariables {
+    static var dataString: String = ""
+}
