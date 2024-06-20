@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import Vision
 
 struct ContentView: View {
     @State private var selectedImage: UIImage?

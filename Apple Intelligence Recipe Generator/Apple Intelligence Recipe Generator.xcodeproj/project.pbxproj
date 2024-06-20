@@ -13,6 +13,8 @@
 		DC1C9F302C23D97300A11C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */; };
 		DC1C9F332C23D97300A11C35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1C9F322C23D97300A11C35 /* Preview Assets.xcassets */; };
 		DC1C9F3A2C23DD6800A11C35 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F392C23DD6800A11C35 /* CameraView.swift */; };
+		DC1C9F3D2C23FBC200A11C35 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F3C2C23FBC200A11C35 /* RegistrationView.swift */; };
+		DC1C9F3F2C2404A000A11C35 /* Onboarding1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F3E2C2404A000A11C35 /* Onboarding1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC1C9F322C23D97300A11C35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC1C9F392C23DD6800A11C35 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		DC1C9F3B2C23DE7000A11C35 /* Apple-Intelligence-Recipe-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Apple-Intelligence-Recipe-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DC1C9F3C2C23FBC200A11C35 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		DC1C9F3E2C2404A000A11C35 /* Onboarding1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */,
 				DC1C9F2B2C23D97200A11C35 /* ContentView.swift */,
 				DC1C9F392C23DD6800A11C35 /* CameraView.swift */,
+				DC1C9F3C2C23FBC200A11C35 /* RegistrationView.swift */,
+				DC1C9F3E2C2404A000A11C35 /* Onboarding1View.swift */,
 				DC1C9F2D2C23D97200A11C35 /* Item.swift */,
 				DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */,
 				DC1C9F312C23D97300A11C35 /* Preview Content */,
@@ -149,6 +155,8 @@
 				DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */,
 				DC1C9F2A2C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift in Sources */,
 				DC1C9F3A2C23DD6800A11C35 /* CameraView.swift in Sources */,
+				DC1C9F3D2C23FBC200A11C35 /* RegistrationView.swift in Sources */,
+				DC1C9F3F2C2404A000A11C35 /* Onboarding1View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
