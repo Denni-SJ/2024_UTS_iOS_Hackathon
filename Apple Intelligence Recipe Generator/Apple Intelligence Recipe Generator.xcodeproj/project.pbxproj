@@ -12,6 +12,7 @@
 		DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F2D2C23D97200A11C35 /* Item.swift */; };
 		DC1C9F302C23D97300A11C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */; };
 		DC1C9F332C23D97300A11C35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1C9F322C23D97300A11C35 /* Preview Assets.xcassets */; };
+		DC1C9F3A2C23DD6800A11C35 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1C9F392C23DD6800A11C35 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		DC1C9F2D2C23D97200A11C35 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC1C9F322C23D97300A11C35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC1C9F392C23DD6800A11C35 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DC1C9F3B2C23DE7000A11C35 /* Apple-Intelligence-Recipe-Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Apple-Intelligence-Recipe-Generator-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +56,10 @@
 		DC1C9F282C23D97200A11C35 /* Apple Intelligence Recipe Generator */ = {
 			isa = PBXGroup;
 			children = (
+				DC1C9F3B2C23DE7000A11C35 /* Apple-Intelligence-Recipe-Generator-Info.plist */,
 				DC1C9F292C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift */,
 				DC1C9F2B2C23D97200A11C35 /* ContentView.swift */,
+				DC1C9F392C23DD6800A11C35 /* CameraView.swift */,
 				DC1C9F2D2C23D97200A11C35 /* Item.swift */,
 				DC1C9F2F2C23D97300A11C35 /* Assets.xcassets */,
 				DC1C9F312C23D97300A11C35 /* Preview Content */,
@@ -143,6 +148,7 @@
 				DC1C9F2C2C23D97200A11C35 /* ContentView.swift in Sources */,
 				DC1C9F2E2C23D97200A11C35 /* Item.swift in Sources */,
 				DC1C9F2A2C23D97200A11C35 /* Apple_Intelligence_Recipe_GeneratorApp.swift in Sources */,
+				DC1C9F3A2C23DD6800A11C35 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +284,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Intelligence Recipe Generator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Apple-Intelligence-Recipe-Generator-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to capture photos and videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to access photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +315,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Apple Intelligence Recipe Generator/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Apple-Intelligence-Recipe-Generator-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to capture photos and videos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to access photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
